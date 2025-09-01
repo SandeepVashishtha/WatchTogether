@@ -1,12 +1,26 @@
-# React + Vite
+## Frontend (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the React frontend for WatchTogether — a YouTube watch party app with real‑time video/audio chat.
 
-Currently, two official plugins are available:
+### Prerequisites
+- Node.js 20.11.1 (supported via pinned Vite 4.x)
+- npm 10+
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Run locally (Windows PowerShell)
+```powershell
+cd frontend
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Open the printed URL (e.g., http://localhost:5173) in your browser.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Notes
+- We pin `vite@^4.4.9` and `@vitejs/plugin-react@^4.0.0` to support Node 20.11.1.
+- If you upgrade Node to ≥ 20.19 or 22.12, you can bump Vite to the latest.
+
+### Scripts
+- `npm run dev` – start dev server
+- `npm run build` – production build
+- `npm run preview` – preview build locally
+- `npm run lint` – run ESLint
